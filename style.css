@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+  margin: 45px 45px 0 45px;
+}
+.image{
+  width: auto;
+}
+.row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+  ul{
+    background-color: white;
+    list-style-type: none;
+    overflow: hidden;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  ul a{
+    color: black;
+    text-decoration: none;
+  }
+
+  ul li:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+
+  #login{
+    border-radius: 8px;
+    padding: 5px 8px;
+  }
+
+  #login{
+    background-color:#498afb;
+  }
+  #login a{
+    color: white;
+  }
+.slide{
+    height: 450px;
+    width: 100%;
+    overflow: hidden;
+    flex: 1;
+    border-radius: 1px solid white;
+    filter: invert(15%);
+    transition: 0.7s ease-in-out;
+}
+
+.slide:nth-child(1){
+  background: url(imgg7.jpg);
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide:nth-child(2){
+    background: url(img11.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .slide:nth-child(3){
+    background: url(imgg3.jpg);
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .slide:hover{
+    flex-grow: 3;
+    filter: invert(0);
+  }
